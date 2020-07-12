@@ -443,4 +443,12 @@ h5.title {
   -webkit-animation: circle3 linear 10s infinite alternate;
           animation: circle3 linear 10s infinite alternate;
 }
+
+#footer .logo span:nth-child(1) {
+  color: black;
+}
+
+#content {
+  height: 100vh;
+}
 /*# sourceMappingURL=Navbar.css.map */

@@ -328,3 +328,15 @@ h5.title {
       animation: circle3 linear 10s infinite alternate;
   }
 }
+
+#footer{
+  .logo{
+    span:nth-child(1) {
+      color: black;
+    }
+  }
+}
+
+#content{
+  height: 100vh;
+}

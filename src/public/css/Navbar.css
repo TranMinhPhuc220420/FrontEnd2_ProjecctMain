@@ -50,6 +50,13 @@ p {
   font-weight: 500;
 }
 
+.control {
+  background-color: #0e3746;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+}
+
 .logo span:last-child {
   font-family: "Baloo Thambi 2", cursive;
   color: #fff;

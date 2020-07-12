@@ -39,11 +39,11 @@ class Carousel extends Component {
           <CarouselItem active={false} data={data.post2}/>
           <CarouselItem active={false} data={data.post3}/>
         </div>
-        <a className="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <a className="carousel-control-prev control" href="#carousel" role="button" data-slide="prev">
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
           <span className="sr-only">Previous</span>
         </a>
-        <a className="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <a className="carousel-control-next control" href="#carousel" role="button" data-slide="next">
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="sr-only">Next</span>
         </a>

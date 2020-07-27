@@ -114,7 +114,6 @@ h5.title {
 #carousel {
   overflow: hidden;
   position: relative;
-  padding-top: 74px;
   .carousel-indicators {
     li {
       border-radius: 50%;
@@ -339,4 +338,8 @@ h5.title {
 
 #content{
   height: 100vh;
+}
+
+#WEB_MAIN{
+  padding-top: 74px;
 }

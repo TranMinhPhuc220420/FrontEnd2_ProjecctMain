@@ -50,6 +50,9 @@ p {
   font-weight: 500;
 }
 
+#WEB_MAIN{
+  padding-top: 74px;
+}
 .control {
   background-color: #0e3746;
   top: 50%;
@@ -133,7 +136,6 @@ h5.title {
 #carousel {
   overflow: hidden;
   position: relative;
-  padding-top: 74px;
 }
 
 #carousel .carousel-indicators li {

@@ -1,0 +1,29 @@
+.comment-item{
+    background-color: #f7f7f9;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.time-comment{
+    width: auto;
+    text-align: end;
+    font-size: 0.7em;
+}
+.comment-item {
+    list-style: none;
+}
+.comment-item p{
+    margin-bottom: 0;
+}
+.comment-list{
+    background-color: #fff;
+}
+.comment-panel{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+    padding: 10px;
+}
+.form-post{
+    display: flex;
+}

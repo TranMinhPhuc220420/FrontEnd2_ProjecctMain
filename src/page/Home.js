@@ -2,7 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 import Carousel from "../components/Carousel";
-import Footer from "../components/Footer";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "../public/css/Navbar.css";
@@ -18,7 +17,6 @@ function Home() {
       </Helmet>
 
       <Carousel />
-      <Footer/>
     </div>
   );
 }

@@ -14,7 +14,7 @@ class PostLargeLeft extends Component {
                 <div className="col-md-7">
                     <div className="content">
                         <p className="category">{this.props.data.category}</p>
-                        <h2 className="hv-l">{this.props.data.title}</h2>
+                        <a href="#"><h2 className="hv-l">{this.props.data.title}</h2></a>
                         <p className="post-sapo">{this.props.data.sapo}</p>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ class PostLargeLeft extends Component {
                 <div className="col-md-7">
                     <div className="content">
                         <p className="category">{this.props.data.category}</p>
-                        <h2 className="hv-l">{this.props.data.title}</h2>
+                        <a href="#"><h2 className="hv-l">{this.props.data.title}</h2></a>
                         <p className="post-sapo">{this.props.data.sapo}</p>
                     </div>
                 </div>

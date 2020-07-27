@@ -38,9 +38,6 @@
     width: 750px;
 }
 
-#row-post-large {
-    margin: 40px;
-}
 /* css for PostLaregeRight PostLaregeLeft */
 .col-md-5 .img-post {
     width: 100%;
@@ -48,7 +45,7 @@
 }
 
 #row-post-big  {
-    padding: 40px;
+    padding: 10px;
     background-color: transparent;
 }
 
@@ -85,4 +82,12 @@
 
 .post-big .col-md-7 {
     padding-left: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
 }

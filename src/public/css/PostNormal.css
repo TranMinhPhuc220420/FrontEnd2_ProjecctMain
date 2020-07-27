@@ -1,0 +1,64 @@
+.around-post{
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 450px;
+}
+.around-content-post{
+    padding: 10px 20px;
+}
+.title-post a{
+    text-decoration: none;
+    color: #212529;
+}
+.title-post a:hover{
+    text-decoration: none;
+    color: #212529;
+}
+.title-post{
+    position: relative;
+    padding: 5px 0;
+}
+.title-post::before{
+    content: " ";
+    position: absolute;
+    border-bottom: 3px solid #212529;
+    width: 0;
+    bottom: 0;
+}
+.title-post:hover::before{
+    width: 100%;
+    transition: 0.25s;
+}
+.content-post{
+    font-size: 0.93rem;
+}
+.date-post{
+    opacity: 0.8;
+    text-align: right;
+}
+.img-post-normal{
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+}
+.around-img-post:hover .img-post-normal{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.7;
+}
+.around-img-post{
+    position: relative;
+}
+.link-detail-post{
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    transition: all 0.1s;
+}
+.around-img-post:hover .link-detail-post{
+    visibility: visible;
+    top: 50%;
+}

@@ -1,43 +1,41 @@
 import React, { Component } from 'react';
 
 import CarouselItem from '../components/CarouselItem'
+import PostController from "../controllers/post/PostController";
+
 
 class Carousel extends Component {
+  constructor() {
+    super();
+    this.state = { data: [], post_new: [] };
+  }
+
+  async componentDidMount() {
+    let postController = new PostController();
+    this.setState({ data: await postController.getAll() });
+
+    let list_post_new = [];
+    for (let i = 0; i < 5; i++) {
+      const element =  this.state.data[i];
+      list_post_new.push(element)
+    }
+
+    this.setState({ post_new: list_post_new });
+  }
+
   render() {
-    let data = {
-      post1: {
-        img: 'https://cdn.pixabay.com/photo/2020/07/04/14/19/squirrel-5369727_1280.jpg',
-        title: 'Title test 1',
-        sapo: 'Lorem ipsum dolor sit amet, consectetur adip porttitor'
-      },
-
-      post2: {
-        img: 'https://cdn.pixabay.com/photo/2020/07/10/10/13/sparrow-5390248_1280.jpg',
-        title: 'Title test 2',
-        sapo: 'Lorem ipsum dolor sit amet, consectetur adip porttitor'
-      },
-
-      post3: {
-        img: 'https://cdn.pixabay.com/photo/2020/07/10/17/57/cows-5391559_1280.jpg',
-        title: 'Title test 3',
-        sapo: 'Lorem ipsum dolor sit amet, consectetur adip porttitor'
-      },
-    };
-
     return (
       <div id="carousel" className="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
-            <li data-target="#carousel" data-slide-to="3"></li>
-            <li data-target="#carousel" data-slide-to="4"></li>
+        <ol className="carousel-indicators">
+          {this.state.post_new.map((el, index) => ( 
+            <li data-target="#carousel" data-slide-to={index} key={el.ID_POST} className={index === 0 ? 'active' : ''}></li>
+          ))}
         </ol>
 
         <div className="carousel-inner">
-          <CarouselItem active={true} data={data.post1}/>
-          <CarouselItem active={false} data={data.post2}/>
-          <CarouselItem active={false} data={data.post3}/>
+          {this.state.post_new.map((el, index) =>( 
+            <CarouselItem active={index === 0 ? true : false} data={el} key={el.ID_POST}/>
+          ))}
         </div>
         <a className="carousel-control-prev control" href="#carousel" role="button" data-slide="prev">
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -1,6 +1,6 @@
-class Post {
+class Category {
   async getAll() {
-    const url = 'http://localhost:8080/www/FrontEnd2/FontEnd2_BackEndMain/post/getAll.php';
+    const url = 'http://localhost:8080/www/FrontEnd2/FontEnd2_BackEndMain/category/getAll.php';
     const response = await fetch(url, {
       method: "POST",
       headers: {
@@ -13,4 +13,4 @@ class Post {
   }
 }
 
-export default Post;
+export default Category;

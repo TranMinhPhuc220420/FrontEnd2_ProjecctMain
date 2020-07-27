@@ -7,22 +7,20 @@ class PostNormal extends Component {
     this.state = {
       data: [],
     };
-    console.log(this.props.data);
   }
 
   render() {
     return (
       <div className="row">
         <div className="col">
-          <PostNormalItem dataPost={this.props.data[0]}/>
+          <PostNormalItem dataPost={this.props.data[0]} dateUp={Date(this.props.data[0].DATE_UP)}/>
         </div>
         <div className="col">
-          <PostNormalItem dataPost={this.props.data[1]}/>
+          <PostNormalItem dataPost={this.props.data[1]} dateUp={Date(this.props.data[1].DATE_UP)}/>
         </div>
         <div className="col">
-          <PostNormalItem dataPost={this.props.data[2]}/>
+          <PostNormalItem dataPost={this.props.data[2]} dateUp={Date(this.props.data[2].DATE_UP)}/>
         </div>
-
       </div>
     );
   };

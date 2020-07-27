@@ -17,17 +17,16 @@ import Search from './page/Search';
 
 function App() {
   return (
-      <div>
-        <Router>
-          <Navbar/>
-          <Switch>
-            <Route path='/' exact component={Home}/>
-            <Route path='/detail/:post_id' component={Detail}/>
-            <Route path='/search' component={Search}/>
-          </Switch>
-        </Router>
-        <Footer/>
-      </div>
+    <Router>
+      <header>
+        <Navbar/>
+      </header>
+      <Switch>
+        <Route path='/' exact component={Home}/>
+        <Route path='/detail/:post_id' component={Detail}/>
+        <Route path='/search' component={Search}/>
+      </Switch>
+    </Router>
   );
 }
 

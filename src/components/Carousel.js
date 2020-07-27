@@ -4,26 +4,18 @@ import CarouselItem from '../components/CarouselItem'
 import PostController from "../controllers/post/PostController";
 
 class Carousel extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
       error: null,
       isLoaded: false,
-      items: [],
       list_post_new : []
     };
   }
 
   async componentDidMount() {
-    let post = new PostController();
-    this.setState({items: await post.getAll()})
-
-    // get 5 post new
-    let list_post_new = [];
-    for (let i = 0;  i < 5; i++){
-      list_post_new.push(this.state.items[i]);
-    }
-    this.setState({list_post_new: list_post_new});
+    this.setState({list_post_new: this.props.data})
   }
 
   render() {

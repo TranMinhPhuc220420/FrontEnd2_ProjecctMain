@@ -8,7 +8,6 @@ class DateUp extends Component {
     this.state = {
       content_print : null
     };
-    console.log(this.props)
   }
 
   async componentDidMount() {

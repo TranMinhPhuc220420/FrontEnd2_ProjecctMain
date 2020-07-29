@@ -22,7 +22,7 @@ class PostLargeLeft extends Component {
                 };
 
             return (
-                <div id="category-2" class="post-dep-cate" data-cate="cate-2">
+                <div id="category-2" className="post-dep-cate" data-cate="cate-2">
                     <PostLargeLeftItem active={true} data={data.postBig1}/>
                 </div>
             )

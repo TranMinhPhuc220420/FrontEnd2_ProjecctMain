@@ -26,7 +26,7 @@ class CommentList extends Component {
               }
           };
         return(
-            <div class="comment-list">
+            <div className="comment-list">
                 <CommentItem  dataCmt={dataCmt.cmt1}/>
                 <CommentItem  dataCmt={dataCmt.cmt2}/>
                 <CommentItem  dataCmt={dataCmt.cmt3}/>

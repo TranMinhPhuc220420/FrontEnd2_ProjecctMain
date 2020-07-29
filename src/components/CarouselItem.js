@@ -12,14 +12,14 @@ class CarouselItem extends Component {
       items: [],
       list_post_new : []
     };
+    console.log(this.props)
   }
 
   render() {
-    let url = new front_end_2_inc().getURL();
     if (this.props.active) {
       return (
         <div className='carousel-item active'>
-          <img src={url + '/public/images/' + this.props.data.IMAGE1} alt="..." className="w-100"/>
+          <img src={ '/images/' + this.props.data.IMAGE1} alt="..." className="w-100"/>
           <div className="carousel-caption d-none d-md-block">
           <h5>
             <Link to={'/detail/'+this.props.data.ID_POST} className="link">
@@ -27,14 +27,14 @@ class CarouselItem extends Component {
             </Link>
             <a className="link" href="#">{this.props.data.title}</a>
           </h5>
-          <p>{this.props.data.sapo}</p>
+          <p>{this.props.data.SAPO}</p>
           </div>
         </div>
         )
     } else {
       return (
         <div className='carousel-item '>
-          <img src={url + '/public/images/' +this.props.data.IMAGE1} alt="..." className="w-100"/>
+          <img src={'/images/' +this.props.data.IMAGE1} alt="..." className="w-100"/>
           <div className="carousel-caption d-none d-md-block">
             <h5>
               <Link to={'/detail/'+this.props.data.ID_POST} className="link">
@@ -42,7 +42,7 @@ class CarouselItem extends Component {
               </Link>
               <a className="link" href="#">{this.props.data.title}</a>
             </h5>
-            <p>{this.props.data.sapo}</p>
+            <p>{this.props.data.SAPO}</p>
           </div>
         </div>
         )

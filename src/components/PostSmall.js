@@ -1,23 +1,28 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
+import front_end_2_inc from '../front_end_2_inc';
 
 class PostSmall extends Component {
-    render() {
-        return (
-            <div class="around-post-small">
-                <div class="row">
-                    <div class="col-md-4"> 
-                        <div class="around-img-post-small">
-                            <img src={this.props.dataPostSmall.imgPost} alt="..." class="img-post-small"/>
-                        </div>
-                    </div>
-                    <div class="col-md-8"> 
-                        <div class="around-title-post-small">
-                            <h5 class="title-post-small"><a href="#" class="link-title-post-small">{this.props.dataPostSmall.titlePost}</a></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
-      }
+  render() {
+    let url = new front_end_2_inc().getURL();
+
+    return (
+      <li className="media post post-small">
+        <div className="inner">
+          <Link to={'/detail/' + this.props.data.ID_POST}>
+            <img src={'/images/' + this.props.data.IMAGE1} className="img-post" alt=""/>
+          </Link>
+        </div>
+        <div className="ml-md-3 media-body post-body">
+          <h5 className="hv-l">
+            <Link to={'/detail/' + this.props.data.ID_POST}>
+              {this.props.data.TITLE}
+            </Link>
+          </h5>
+        </div>
+      </li>
+    );
+  }
 }
+
 export default PostSmall

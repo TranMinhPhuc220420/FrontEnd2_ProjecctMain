@@ -21,7 +21,7 @@ class Carousel extends Component {
   render() {
     return (
       <div id="carousel" className="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
+        <ol className="carousel-indicators">
           {this.state.list_post_new.map((item, index) => (
               < li data-target="#carousel" data-slide-to={index} className={index == 0 ? 'active' : '' } key={item.ID_POST}></li>
             ))}

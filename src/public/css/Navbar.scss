@@ -25,13 +25,13 @@ p {
 }
 
 a {
-  color: #fff;
+  color: #0e3746;
   transition: 0.25s all;
 }
 
 a:hover {
   text-decoration: none;
-  color: #fff;
+  color: #174657;
 }
 
 .btn-danger {
@@ -154,6 +154,7 @@ header {
           transition: 0.25s all;
 
           a {
+            color: #FFF;
             letter-spacing: 2px;
           }
         }
@@ -319,6 +320,9 @@ header {
     .post-date-up {
       opacity: 0.8;
       text-align: right;
+      position: absolute;
+      bottom: 0;
+      right: 10px;
     }
   }
 }

@@ -13,7 +13,8 @@ import "./public/css/Navbar.css";
 // Page 
 import Home from './page/Home';
 import Detail from './page/Detail';
-import Search from './page/Search';
+import SearchByTitle from './page/SearchByTitle';
+import SearchByCategory from './page/SearchByCategory';
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
       <Switch>
         <Route path='/' exact component={Home}/>
         <Route path='/detail/:post_id' component={Detail}/>
-        <Route path='/search' component={Search}/>
+        <Route path='/search' exact component={SearchByTitle}/>
+        <Route path='/search/:category_id' exact component={SearchByCategory}/>
       </Switch>
     </Router>
   );

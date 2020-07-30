@@ -38,7 +38,7 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="collapsibleNavId">
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
               {this.state.items.map(el => (
-                <Link  className="nav-link" to='/search' key={el.id_category}>
+                <Link  className="nav-link" to={'/search/' + el.id_category} key={el.id_category}>
                   <li className="nav-item" key={el.id_category}>
                     <span className="hv-l category" data-id={el.id_category}>
                       {el.NAME}

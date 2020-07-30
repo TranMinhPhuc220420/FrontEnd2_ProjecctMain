@@ -4,9 +4,9 @@ import { Helmet } from 'react-helmet';
 import "bootstrap/dist/css/bootstrap.css";
 import "../public/css/Navbar.css";
 
-let NAME_TITLE = 'Search-post';
+let NAME_TITLE = 'SearchByTitle-post';
 
-function Search() {
+function SearchByTitle() {
   return (
     <div id="WEB_MAIN">
       {/* Set title */}
@@ -19,4 +19,4 @@ function Search() {
   );
 }
 
-export default Search;
+export default SearchByTitle;

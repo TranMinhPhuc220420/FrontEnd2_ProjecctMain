@@ -1,15 +1,16 @@
-import React, { Component } from 'react';
-
+import React, {Component} from 'react';
+import DateUp from '../components/DateUp';
 class CommentItem extends Component {
   render() {
     return (
-        <li className="comment-item">
-            <p className="info-comment">
-                <b className="username-comment">{this.props.dataCmt.username}</b>
-                <span className="content-comment">: {this.props.dataCmt.content}</span>
-            </p>
-            <p className="time-comment">{this.props.dataCmt.time}</p>
-        </li>
+      <li className="comment-item">
+        <p className="body">
+          <span className="name">{this.props.data.USERNAME}</span>: {this.props.data.CONTENT}
+        </p>
+        <p className="date-up">
+          <DateUp datetimeUp={this.props.data.DATE_UP}/>
+        </p>
+      </li>
     );
   }
 }

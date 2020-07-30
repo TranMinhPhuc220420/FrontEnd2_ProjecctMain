@@ -961,4 +961,8 @@ footer .footer-left .footer-social li:nth-child(4) a:hover {
   -webkit-transform: translateX(200%);
           transform: translateX(200%);
 }
+
+#WEB_MAIN {
+  padding-top: 74px;
+}
 /*# sourceMappingURL=Navbar.css.map */

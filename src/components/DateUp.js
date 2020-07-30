@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import front_end_2_inc from '../front_end_2_inc';
-
 class DateUp extends Component {
   constructor(props) {
     super(props);

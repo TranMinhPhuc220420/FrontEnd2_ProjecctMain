@@ -10,6 +10,11 @@ class PostController {
     let post = new Post();
     return await post.getByID(postID);
   }
+
+  async getByCategoryID(postID) {
+    let post = new Post();
+    return await post.getByCategoryID(postID);
+  }
 }
 
 export default PostController;

@@ -6,7 +6,7 @@ class PostList extends Component {
         return(
             <div className="list-post list-unstyled" data-scroll="in">
               {this.props.data.map((postItem) => (
-                <PostSmall  data={postItem}/>
+                <PostSmall  data={postItem} key={postItem.ID_POST}/>
               ))}
             </div>
         );

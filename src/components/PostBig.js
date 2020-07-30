@@ -12,11 +12,6 @@ class PostBig extends Component {
           <Link to={'detail/' + this.props.data.ID_POST}>
             <img src={'/images/' + this.props.data.IMAGE1} className="img-post" alt=""/>
           </Link>
-          <figcaption>
-            <button className="btn btn-danger btn-quick-view">
-              Xem nhanh
-            </button>
-          </figcaption>
         </div>
         <div className="card-body post-body">
           <p className="category">{this.props.data.NAME}</p>

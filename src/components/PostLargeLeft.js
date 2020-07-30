@@ -1,32 +1,29 @@
-import React, { Component } from 'react';
-
-import PostLargeLeftItem from '../components/PostLargeLeftItem'
-import img1 from '../public/images/hinh12.jpg'
-import img2 from '../public/images/hinh24-1.jpg'
+import React, {Component} from 'react';
+import BGCircle from "./BGCircle";
+import {Link} from "react-router-dom";
 
 class PostLargeLeft extends Component {
-    render() {
-            let data = {
-                    postBig1: {
-                        'img': img1,
-                        'category': 'Kinh tế',
-                        'title': 'Vợ chồng người Anh nhiễm Covid-19 từng đến nhà tù Hỏa Lò',
-                        'sapo': 'Di tích Nhà tù Hỏa Lò tạm ngừng đón khách để khử khuẩn, các nhân viên di tích được cách ly sau khi 2 du khách nhiễm Covid-19 từng đến đây.'
-                    },     
-                    postBig2: {
-                        'img': img2,
-                        'category': 'Giải trí',
-                        'title': 'Hòa Hiệp xót thương bệnh tình ung thư phổi của Mai Phương',
-                        'sapo': 'Diễn viên Hòa Hiệp, bạn bè, đồng nghiệp cầu nguyện cho bệnh tình của Mai Phương.'
-                    },
-                };
+  render() {
+    return (
+      <div className="row post-big" id="row-post-big" data-scroll="in">
+        <div className="col-md-5">
+          <img src={'/images/' + this.props.data.IMAGE1} className="img-post" alt={this.props.data.TITLE}/>
+          <BGCircle/>
+        </div>
 
-            return (
-                <div id="category-2" className="post-dep-cate" data-cate="cate-2">
-                    <PostLargeLeftItem active={true} data={data.postBig1}/>
-                </div>
-            )
-    }
+        <div className="col-md-7">
+          <div className="content">
+            <p className="category">{this.props.data.NAME}</p>
+            <Link to={'/detail/' + this.props.data.ID_POST} className="hv-l">
+              <h2>{this.props.data.TITLE}</h2>
+            </Link>
+            <p className="post-sapo">{this.props.data.SAPO}</p>
+          </div>
+        </div>
+
+      </div>
+    )
+  }
 }
 
 export default PostLargeLeft

@@ -13,13 +13,13 @@ class PostNormal extends Component {
     return (
       <div className="row">
         <div className="col-md-4 mb-md-5 mr-xs-2" data-scroll="in">
-          <PostNormalItem dataPost={this.props.data[0]} dateUp={Date(this.props.data[0].DATE_UP)}/>
+          <PostNormalItem data={this.props.data[0]} dateUp={Date(this.props.data[0].DATE_UP)}/>
         </div>
         <div className="col-md-4 mb-md-5 mr-xs-2" data-scroll="in">
-          <PostNormalItem dataPost={this.props.data[1]} dateUp={Date(this.props.data[1].DATE_UP)}/>
+          <PostNormalItem data={this.props.data[1]} dateUp={Date(this.props.data[1].DATE_UP)}/>
         </div>
         <div className="col-md-4 mb-md-5 mr-xs-2" data-scroll="in">
-          <PostNormalItem dataPost={this.props.data[2]} dateUp={Date(this.props.data[2].DATE_UP)}/>
+          <PostNormalItem data={this.props.data[2]} dateUp={Date(this.props.data[2].DATE_UP)}/>
         </div>
       </div>
     );

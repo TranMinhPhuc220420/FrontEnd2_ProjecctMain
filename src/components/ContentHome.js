@@ -81,16 +81,16 @@ class ContentHome extends Component {
           }
           break;
         case 2:
-          if (arr_temp_category_2.length == 0) {
+          if (arr_temp_category_2.length === 0) {
             el_add = <PostLargeLeft data={item}/>;
           } else {
-            if (arr_temp_category_2.length == 1) {
+            if (arr_temp_category_2.length === 1) {
               el_add = <PostNormalItem data={item}/>;
             } else {
-              if (arr_temp_category_2.length == 2) {
+              if (arr_temp_category_2.length === 2) {
                 el_add = <PostBasic data={item}/>
               } else {
-                if (arr_temp_category_2.length != 4) {
+                if (arr_temp_category_2.length !== 4) {
                   list_post_small_2.push(item)
                 }
               }
@@ -101,16 +101,16 @@ class ContentHome extends Component {
           }
           break;
         case 3:
-          if (arr_temp_category_3.length == 0) {
+          if (arr_temp_category_3.length === 0) {
             el_add = <PostLargeRight data={item}/>;
           } else {
-            if (arr_temp_category_3.length == 1) {
+            if (arr_temp_category_3.length === 1) {
               el_add = <PostNormalItem data={item}/>;
             } else {
-              if (arr_temp_category_3.length == 2) {
+              if (arr_temp_category_3.length === 2) {
                 el_add = <PostBasic data={item}/>
               } else {
-                if (arr_temp_category_3.length != 4) {
+                if (arr_temp_category_3.length !== 4) {
                   list_post_small_3.push(item)
                 }
               }
@@ -121,16 +121,16 @@ class ContentHome extends Component {
           }
           break;
         case 4:
-          if (arr_temp_category_4.length == 0) {
+          if (arr_temp_category_4.length === 0) {
             el_add = <PostLargeLeft data={item}/>;
           } else {
-            if (arr_temp_category_4.length == 1) {
+            if (arr_temp_category_4.length === 1) {
               el_add = <PostNormalItem data={item}/>;
             } else {
-              if (arr_temp_category_4.length == 2) {
+              if (arr_temp_category_4.length === 2) {
                 el_add = <PostBasic data={item}/>
               } else {
-                if (arr_temp_category_4.length != 4) {
+                if (arr_temp_category_4.length !== 4) {
                   list_post_small_4.push(item)
                 }
               }
@@ -141,16 +141,16 @@ class ContentHome extends Component {
           }
           break;
         case 5:
-          if (arr_temp_category_5.length == 0) {
+          if (arr_temp_category_5.length === 0) {
             el_add = <PostLargeRight data={item}/>;
           } else {
-            if (arr_temp_category_5.length == 1) {
+            if (arr_temp_category_5.length === 1) {
               el_add = <PostNormalItem data={item}/>;
             } else {
-              if (arr_temp_category_5.length == 2) {
+              if (arr_temp_category_5.length === 2) {
                 el_add = <PostBasic data={item}/>
               } else {
-                if (arr_temp_category_5.length != 4) {
+                if (arr_temp_category_5.length !== 4) {
                   list_post_small_5.push(item)
                 }
               }

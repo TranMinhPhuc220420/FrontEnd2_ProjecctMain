@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import front_end_2_inc from '../front_end_2_inc';
 import {Link} from 'react-router-dom';
 import DateUp from '../components/DateUp';
 

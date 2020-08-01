@@ -14,11 +14,11 @@ class DateUp extends Component {
     if (datetimeUp_raw.getMinutes() === dateNow.getMinutes() && datetimeUp_raw.getHours() === dateNow.getHours()) {
        this.setState({ content_print: 'mới đây'});
     }else{
-      if (datetimeUp_raw.getHours() == dateNow.getHours() && datetimeUp_raw.getDay() == dateNow.getDay()) {
+      if (datetimeUp_raw.getHours() === dateNow.getHours() && datetimeUp_raw.getDay() === dateNow.getDay()) {
         let print = <span> <i className="fa fa-clock"> </i> {dateNow.getMinutes() - datetimeUp_raw.getMinutes()} phút trước </span>;
         this.setState({ content_print: print})
       }else{
-        if (datetimeUp_raw.getDay() == dateNow.getDay() && datetimeUp_raw.getMonth() == dateNow.getMonth()) {
+        if (datetimeUp_raw.getDay() === dateNow.getDay() && datetimeUp_raw.getMonth() === dateNow.getMonth()) {
             let print = <span> <i className="fa fa-clock"></i>  { dateNow.getHours() - datetimeUp_raw.getHours() } giờ trước </span>;
             this.setState({ content_print: print})
         }else{

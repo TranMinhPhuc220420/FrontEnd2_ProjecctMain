@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import CarouselItem from '../components/CarouselItem'
-import PostController from "../controllers/post/PostController";
 
 class Carousel extends Component {
 
@@ -23,13 +22,13 @@ class Carousel extends Component {
       <div id="carousel" className="carousel slide" data-ride="carousel">
         <ol className="carousel-indicators">
           {this.state.list_post_new.map((item, index) => (
-              < li data-target="#carousel" data-slide-to={index} className={index == 0 ? 'active' : '' } key={item.ID_POST}></li>
+              < li data-target="#carousel" data-slide-to={index} className={index === 0 ? 'active' : '' } key={item.ID_POST}></li>
             ))}
         </ol>
 
         <div className="carousel-inner">
           {this.state.list_post_new.map((item, index) => (
-              <CarouselItem key={item.ID_POST} active={index == 0 ? true : false } data={item}/>
+              <CarouselItem key={item.ID_POST} active={index === 0 ? true : false } data={item}/>
           ))}
         </div>
         <a className="carousel-control-prev control" href="#carousel" role="button" data-slide="prev">

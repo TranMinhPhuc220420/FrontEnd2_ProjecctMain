@@ -139,15 +139,15 @@ class Detail extends React.Component {
               <div className="col-md-4">
                 <h5>Tin liên quan:</h5>
 
-                {this.state.list_post_like.length != 0 && (
+                {this.state.list_post_like.length !== 0 && (
                   <PostList
                     data={[this.state.list_post_like[2], this.state.list_post_like[3], this.state.list_post_like[4]]}/>
                 )}
 
-                {this.state.list_post_like.length != 0 && (
+                {this.state.list_post_like.length !== 0 && (
                   <PostNormalItem data={this.state.list_post_like[0]}/>
                 )}
-                {this.state.list_post_like.length != 0 && (
+                {this.state.list_post_like.length !== 0 && (
                   <PostNormalItem data={this.state.list_post_like[1]}/>
                 )}
               </div>

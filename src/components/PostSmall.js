@@ -1,11 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import front_end_2_inc from '../front_end_2_inc';
 
 class PostSmall extends Component {
   render() {
-    let url = new front_end_2_inc().getURL();
-
     return (
       <li className="media post post-small">
         <div className="inner">

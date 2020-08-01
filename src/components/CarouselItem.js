@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import front_end_2_inc from '../front_end_2_inc';
-
 class CarouselItem extends Component {
   constructor(props) {
     super(props);
@@ -12,7 +10,6 @@ class CarouselItem extends Component {
       items: [],
       list_post_new : []
     };
-    console.log(this.props)
   }
 
   render() {
@@ -25,7 +22,6 @@ class CarouselItem extends Component {
             <Link to={'/detail/'+this.props.data.ID_POST} className="link">
               {this.props.data.TITLE}
             </Link>
-            <a className="link" href="#">{this.props.data.title}</a>
           </h5>
           <p>{this.props.data.SAPO}</p>
           </div>
@@ -40,7 +36,6 @@ class CarouselItem extends Component {
               <Link to={'/detail/'+this.props.data.ID_POST} className="link">
                 {this.props.data.TITLE}
               </Link>
-              <a className="link" href="#">{this.props.data.title}</a>
             </h5>
             <p>{this.props.data.SAPO}</p>
           </div>
